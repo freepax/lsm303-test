@@ -11,6 +11,6 @@ set(LSM303_SOURCE
 )
 
 add_executable(lsm303-test ${LSM303_SOURCE})
-target_link_libraries(lsm303-test firmware_i2c lsm303lib bmp180)
+target_link_libraries(lsm303-test firmware_i2c lsm303lib)
 
 install(TARGETS lsm303-test DESTINATION bin)
