@@ -44,7 +44,7 @@ int main(int argc, char **argv)
     /// read temperature and pressure 10 times
     while (1) {
         /// get acceleration data
-        if (lsm303accelerometer.getEvent(&sensor_event) < 0) {
+        if (lsm303accelerometer.read(&sensor_event) < 0) {
             std::cerr << __func__ << ":" << __LINE__ << " readTemperature failed" << std::endl;
             return -1;
         }
