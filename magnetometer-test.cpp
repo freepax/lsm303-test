@@ -54,6 +54,8 @@ int main(int argc, char **argv)
         return -2;
     }
 
+    lsm303magnetometer.enableAutoRange(true);
+
     int i;
     int x;
     int y;
