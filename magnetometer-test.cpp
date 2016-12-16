@@ -14,7 +14,7 @@
 
 int main(int argc, char **argv)
 {
-    sensor_event_t sensor_event;
+    magnetic_event_t sensor_event;
 //    sensor_t sensor;
 
     /// create lsm303magnetometer instance - set device to "/dev/i2c-1"
