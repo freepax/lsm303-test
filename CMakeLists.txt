@@ -12,5 +12,9 @@ target_link_libraries(accelerometer-test firmware_i2c lsm303)
 add_executable(magnetometer-test magnetometer-test.cpp)
 target_link_libraries(magnetometer-test firmware_i2c lsm303)
 
+add_executable(calibration calibration.cpp)
+target_link_libraries(calibration firmware_i2c lsm303)
+
 install(TARGETS accelerometer-test DESTINATION bin)
 install(TARGETS magnetometer-test DESTINATION bin)
+install(TARGETS calibration DESTINATION bin)
