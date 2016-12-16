@@ -83,7 +83,7 @@ int main(int argc, char **argv)
         z /= AVARAGE;
 
         //std::cout << "magnetic x " << std::dec << x << " magnetic y " << y << " magnetic z " << z << std::endl;
-        printf("x    %04d    y    %04d    z    %04d\n", x, y, z);
+        printf("%s: x    %04d    y    %04d    z    %04d\n", __func__, x, y, z);
     }
 
     if (lsm303magnetometer.closeDevice() < 0) {
